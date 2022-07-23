@@ -28,28 +28,14 @@ export class ListSharePoint implements IListService {
       this._currentWebUrl = this._pageContext.web.absoluteUrl;
     });
   }
-  // public getAllC() {
-
-  //   return fetch("https://howling-crypt-47129.herokuapp.com/https://api.nhs.uk/comments/Comments?odsCode=S6Z6X",
-  //     {
-  //       method: "GET",
-  //       headers: {
-  //         "subscription-key": "ba6392dcbb7a44b484c20b5bde2e180e"
-  //       }
-  //     })
-  //     .then((res) => res.json())
-  //     .then((json) => {
-
-  //       console.log(json);
-  //     })
-  // }
+ 
 
   public getAll(): Promise<ListItem[]> {
     return fetch("https://howling-crypt-47129.herokuapp.com/https://api.nhs.uk/comments/Comments?odsCode=S6Z6X",
       {
         method: "GET",
         headers: {
-          "subscription-key": "ba6392dcbb7a44b484c20b5bde2e180e"
+          "subscription-key": "d595c1f862574acab8e963759ead7a20"
         }
       })
       .then((response) => {
@@ -58,3 +44,5 @@ export class ListSharePoint implements IListService {
   }
 
 }
+
+//ba6392dcbb7a44b484c20b5bde2e180e

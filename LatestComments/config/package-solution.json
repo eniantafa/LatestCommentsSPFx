@@ -3,7 +3,7 @@
   "solution": {
     "name": "latest-comments-client-side-solution",
     "id": "1d181d94-215c-4093-ac2a-c6c9000b5262",
-    "version": "1.0.0.0",
+    "version": "1.0.0.1",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
