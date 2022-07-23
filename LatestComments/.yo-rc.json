@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.0",
+    "libraryName": "latest-comments",
+    "libraryId": "1d181d94-215c-4093-ac2a-c6c9000b5262",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "LatestComments",
+    "solutionShortDescription": "LatestComments description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
