@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "nhs-reviews-client-side-solution",
+    "id": "1d181d94-215c-4093-ac2a-c6c9000b5262",
+    "version": "1.0.0.2",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.15.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "LatestComments description"
+      },
+      "longDescription": {
+        "default": "LatestComments description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "latest-comments Feature",
+        "description": "The feature that activates elements of the latest-comments solution.",
+        "id": "90764a3b-35a0-4595-8bea-70b9a1ac7cc8",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/nhs-reviews.sppkg"
+  }
+}
