@@ -22,6 +22,7 @@ export interface ILatestCommentsWebPartProps {
   slideNumber:string;
   itemNumber:string;
  slideTimer:string;
+ webpartName:string;
 }
 
 export default class LatestCommentsWebPart extends BaseClientSideWebPart<ILatestCommentsWebPartProps> {
@@ -47,6 +48,7 @@ export default class LatestCommentsWebPart extends BaseClientSideWebPart<ILatest
         description: this.properties.description,
         itemNumber: this.properties.itemNumber,
         slideTimer:this.properties.slideTimer,
+        webpartName:this.properties.webpartName,
         isDarkTheme: this._isDarkTheme,
         environmentMessage: this._environmentMessage,
         hasTeamsContext: !!this.context.sdks.microsoftTeams,
@@ -107,7 +109,14 @@ export default class LatestCommentsWebPart extends BaseClientSideWebPart<ILatest
           },
           groups: [
           
-        
+            {
+              groupName: 'Webpart Name',
+              groupFields: [
+                PropertyPaneTextField('webpartName', {
+                  label: strings.webpartNameFieldLabel
+                })
+              ]
+            },
             {
               groupName: 'Number of Items',
               groupFields: [

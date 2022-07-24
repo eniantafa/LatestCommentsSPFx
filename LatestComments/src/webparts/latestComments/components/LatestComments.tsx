@@ -77,7 +77,7 @@ export default class LatestComments extends React.Component<ILatestCommentsProps
     return (
       <div className={styles.breakingNews}>
         <div className={styles.container}>
-         
+         <div className={styles.webpartName}>{this.props.webpartName}</div>
             <Slider className={styles.sliderNews} {...slidersettings}>
               {this.state.listItems.length &&
                 this.state.listItems.map((listItemNews, i) => {

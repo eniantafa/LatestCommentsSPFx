@@ -1,9 +1,9 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "latest-comments-client-side-solution",
+    "name": "nhs-reviews-client-side-solution",
     "id": "1d181d94-215c-4093-ac2a-c6c9000b5262",
-    "version": "1.0.0.1",
+    "version": "1.0.0.2",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
@@ -35,6 +35,6 @@
     ]
   },
   "paths": {
-    "zippedPackage": "solution/latest-comments.sppkg"
+    "zippedPackage": "solution/nhs-reviews.sppkg"
   }
 }

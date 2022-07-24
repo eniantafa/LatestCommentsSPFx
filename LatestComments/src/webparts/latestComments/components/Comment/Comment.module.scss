@@ -24,30 +24,24 @@
   // transform: translateX(-50%);
   // width: 100vw;
   .container {
-    //margin-right: 20%;
-    
-      // width: 100%;
-      // height: 200px;
-      // display: grid;
-      // align-items: center;
-      // //grid-template-columns: 15% 85%;
+
      
       .sliderNews {
     
         .itemNewsContainer {
           color: rgb(0, 0, 0);
-          font-family: "BenchNine";
-          text-transform: uppercase;
+          //font-family: "BenchNine";
+          //text-transform: uppercase;
           .itemNews {
             //display: flex;
             .dateNewsContainer {
              z-index: 1;
-              font-size: 30px;
-              line-height: 30px;
+              font-size: 20px;
+              line-height: 20px;
               display: block;
               padding: 7px;
-              width: 80%;
-              height: 30px;
+              width: 50%;
+              height: 20px;
               white-space: nowrap;
               color: #fff;
               text-align: center;
@@ -74,17 +68,17 @@
               display: -webkit-box;
               -webkit-line-clamp: 2;
               -webkit-box-orient: vertical;
-              padding-bottom: 20px;
-              padding-top: 15px;
+              padding-bottom: 4px;
+             // padding-top: 5px;
             }
             .subtitleNews {
-              font-size: 20px;
+              font-size: 18px;
               color: rgb(0, 0, 0);
            
               overflow: hidden;
               text-overflow: ellipsis;
               display: -webkit-box;
-              -webkit-line-clamp: 2;
+              -webkit-line-clamp: 4;
               -webkit-box-orient: vertical;
             }
 
@@ -97,49 +91,26 @@
         padding-bottom: 1px;
         }
       }
-    
-  }
-}
-[class*="modalBNews"] {
-  padding: 0 !important;
-  min-width: 30vw;
-  .titleDateModal {
-    background-color:  #0f2240;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h2 {
-      font-family: "BenchNine";
-      font-size: 27px;
-      margin: 0;
-      color: #fff;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    time {
-      font-family: "BenchNine";
-      color: #000;
-      font-weight: 900;
-      font-size: 15px;
-      text-align: right;
-      width: 100%;
-      position: fixed;
-      top: 20px;
-      height: 0;
-    }
-  }
+      .webpartName{
+        text-align: center;
+        font-size: 27px;
+        color: rgb(0, 0, 0);
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        padding-bottom: 25px;
+       // text-transform: uppercase;
 
-
+      }
+  }
 }
 
 .allReviewsButton{
   display: flex;
   justify-content: center;
-  padding-top: 8%;
 }
 
 .buttonColor{

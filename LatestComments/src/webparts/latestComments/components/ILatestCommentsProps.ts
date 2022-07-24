@@ -9,4 +9,5 @@ export interface ILatestCommentsProps {
   slideNumber:string;
   itemNumber:string;
   slideTimer:string;
+  webpartName:string;
 }

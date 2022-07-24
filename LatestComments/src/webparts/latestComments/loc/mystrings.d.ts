@@ -9,6 +9,7 @@ declare interface ILatestCommentsWebPartStrings {
   slideNumberFieldLabel: string;
   itemNumberFieldLabel: string;
   slideTimerFieldLabel: string;
+  webpartNameFieldLabel: string;
 
 }
 
