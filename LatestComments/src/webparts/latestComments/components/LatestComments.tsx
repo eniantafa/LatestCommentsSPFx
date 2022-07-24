@@ -1,3 +1,7 @@
+/* eslint-disable @typescript-eslint/explicit-member-accessibility */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/typedef */
+/* eslint-disable no-var */
 import * as React from 'react';
 //import styles from './LatestComments.module.scss';
 import { ILatestCommentsProps } from './ILatestCommentsProps';
@@ -73,10 +77,7 @@ export default class LatestComments extends React.Component<ILatestCommentsProps
     return (
       <div className={styles.breakingNews}>
         <div className={styles.container}>
-          <div className={styles.row}>
-            <div className={styles.background}>
-              {/* <img src={require('./../assets/cover.png')} /> */}
-            </div>
+         
             <Slider className={styles.sliderNews} {...slidersettings}>
               {this.state.listItems.length &&
                 this.state.listItems.map((listItemNews, i) => {
@@ -88,11 +89,11 @@ export default class LatestComments extends React.Component<ILatestCommentsProps
                 })}
             </Slider>
             <div className={styles.allReviewsButton}>
-              <DefaultButton style={{  backgroundColor: '#fcba03', color:"white"}} href='https://www.nhs.uk/services/independent-provider/community-health-and-eyecare-limited/X93609/ratings-and-reviews'  type="button">
+              <DefaultButton className={styles.buttonColor} href='https://www.nhs.uk/services/independent-provider/community-health-and-eyecare-limited/X93609/ratings-and-reviews'  type="button">
                 See all reviews
               </DefaultButton>
             </div>
-          </div>
+          
         </div>
       </div>
     );

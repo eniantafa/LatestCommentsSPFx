@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-member-accessibility */
 import * as React from "react";
 import { ICommentProps } from "./ICommentProps";
 import styles from "./Comment.module.scss";
@@ -25,31 +26,29 @@ export default class Comment extends React.Component<
     return (
       <div className={styles.itemNewsContainer}>
         <div className={styles.itemNews}>
-          <div style={{position: 'relative', paddingRight: '75px'}}>
-            <div className={styles.dateNewsContainer} style={{paddingBottom: '15px'}} >
+          <div >
+            <div className={styles.dateNewsContainer} >
             <Moment className={styles.dateNews} format="DD">
-              {this.props.listItemNews.response.dateSubmitted}
+              {this.props.listItemNews.comment.dateSubmitted}
             </Moment>
             <Moment className={styles.dateNews} format="MMM">
-              {this.props.listItemNews.response.dateSubmitted}
+              {this.props.listItemNews.comment.dateSubmitted}
             </Moment>
 
             <Moment className={styles.dateNews} format="YYYY">
-              {this.props.listItemNews.response.dateSubmitted}
+              {this.props.listItemNews.comment.dateSubmitted}
             </Moment>
             </div>
           </div>
-          
+          <br/>
           
           <div>
-            <div style={{position: 'fixed', display: 'absolute', paddingLeft: '370px', paddingTop: '9px'}}>
-            <CommentFilled style={{color: '#f6a737', width: '45px', height: '45px'}}/>
-          </div>
-            <h1 className={styles.titleNews} style={{display: 'absolute'}}>
+          
+            <h1 className={styles.titleNews}>
               {this.props.listItemNews.comment.title}
             </h1>
             <h4 className={styles.subtitleNews} >
-              {this.props.listItemNews.response.commentText}
+              {this.props.listItemNews.comment.commentText}
             </h4>
 
           </div>
