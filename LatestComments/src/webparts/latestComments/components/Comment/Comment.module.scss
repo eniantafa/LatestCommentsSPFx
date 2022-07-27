@@ -66,7 +66,7 @@
               overflow: hidden;
               text-overflow: ellipsis;
               display: -webkit-box;
-              -webkit-line-clamp: 2;
+              -webkit-line-clamp: 1;
               -webkit-box-orient: vertical;
               padding-bottom: 4px;
              // padding-top: 5px;
@@ -74,7 +74,8 @@
             .subtitleNews {
               font-size: 18px;
               color: rgb(0, 0, 0);
-           
+              font-weight: bold;
+
               overflow: hidden;
               text-overflow: ellipsis;
               display: -webkit-box;
@@ -92,6 +93,8 @@
         }
       }
       .webpartName{
+        font-weight: bold;
+
         text-align: center;
         font-size: 27px;
         color: rgb(0, 0, 0);
@@ -105,6 +108,36 @@
        // text-transform: uppercase;
 
       }
+      .screenName{
+        font-weight: bold;
+        text-align: center;
+        font-size: 28px;
+        color: rgb(0, 0, 0);
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        padding-bottom: 4px;
+      }
+      
+      .rating{
+        justify-content: center;
+        text-align: center;
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: flex;
+        padding-bottom: 12px;
+      }
+      .outoftext{
+    
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+      }
   }
 }
 
@@ -113,8 +146,10 @@
   justify-content: center;
 }
 
+
 .buttonColor{
   background-color: #217bac;
   text-align: center;
   color: white;
 }
+

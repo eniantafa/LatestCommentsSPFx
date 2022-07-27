@@ -3,10 +3,12 @@ export class ListItem {
         title: string;
         commentText:string;
         dateSubmitted:Date;
+        screenName:string;
+        ratings:Array<Ratings>
    };
 
-   public response: {
-        commentText:string;
-        dateSubmitted:Date;
-  };
 }
+
+export class Ratings {
+  public rating:number;
+};
